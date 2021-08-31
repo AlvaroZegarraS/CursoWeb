@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularios</title>
+</head>
+<body>
+<form action="ejemplo.php" method="get">
+<fieldset>
+	<legend>Datos personales</legend>
+	<p>Nombre:
+		<input type="text" name="nombre" size="40" placeholder="Escriba su nombre completo" required>
+	</p>
+	<p>Año de nacimiento:
+		<input type="number" name="nacido" size="20" min="1900">
+	</p>
+	<p>Sexo:
+		<input type="radio" name="hm" value="h" required>Hombre
+		<input type="radio" name="hm" value="m" required>Mujer
+	</p>
+</fieldset>
+<fieldset>
+	<legend>Cultura general</legend>
+	<p>Capital de Noruega:
+		<input type="radio" name="cn" value="c">Copenhague
+		<input type="radio" name="cn" value="h">Helsinki
+		<input type="radio" name="cn" value="o">Oslo
+	</p>
+	<p>Fecha de la revolucion francesa:
+		<input type="radio" name="fec" value="a">1492
+		<input type="radio" name="fec" value="b">1789
+		<input type="radio" name="fec" value="c">1917
+	</p>
+</fieldset>
+<p>
+	<input type="submit" value="Enviar" disabled>
+	<input type="reset" value="Borrar">
+</p>
+
+</form>
+</body>
+</html>

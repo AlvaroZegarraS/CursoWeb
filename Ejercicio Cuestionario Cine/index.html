@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+        <h2>Cuestionario de Cine</h1>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>Nombre:<br>
+                <input type="text" name="nombre"></p>
+            <p>Apellidos:<br>
+                <input type="text" name="apellidos"></p>
+            <p>DNI:<br>
+                <input type="number" name="DNI"></p>
+            <p>Edad:<br>
+                <input type="text" name="edad" size="3" ></p>
+            <p>Sexo:<br>
+                <select name="sexo" id="sexo" >
+                    <option value="0" selected>...</option>
+                    <option value="1" >Hombre</option>
+                    <option value="2">Mujer</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Mejor Película</legend>
+            <p><input type="radio">El Padrino</p>
+            <p><input type="radio">Crepúsculo</p>
+            <p><input type="radio">Los odiosos 8</p>
+            <p><input type="radio">Anatomia de un asesinato</p>
+        </fieldset>
+        <fieldset>
+            <legend>Tu opinión</legend>
+            <p><textarea name="opinión" rows="10" cols="40"placeholder="Escribe aquí tu opinión" ></textarea></p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+</body>
+</html>
